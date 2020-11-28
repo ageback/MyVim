@@ -1,3 +1,10 @@
+"自定义按键映射
+"切换缓冲区，使用了 https://github.com/tpope/vim-unimpaired 插件的映射
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
 colorscheme desert
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 set ambiwidth=double
