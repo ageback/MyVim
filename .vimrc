@@ -4,6 +4,8 @@ nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
+"轻松展开当前文件所在的目录
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 colorscheme desert
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
