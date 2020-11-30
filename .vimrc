@@ -13,6 +13,7 @@ set ambiwidth=double
 set nocompatible
 set nu  "行号
 set hls
+set incsearch
 filetype off
 filetype plugin on
 set laststatus=2 "始终显示状态栏
@@ -21,7 +22,8 @@ set tabstop=4
 set ai!
 set shiftwidth=4
 set softtabstop=4
-set ignorecase
+
+set smartcase
 syntax enable
 
 "语言和编码设置
