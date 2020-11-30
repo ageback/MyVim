@@ -23,6 +23,8 @@ set ai!
 set shiftwidth=4
 set softtabstop=4
 
+runtime macros/matchit.vim
+
 set smartcase
 syntax enable
 
@@ -67,6 +69,7 @@ let g:airline_symbols.dirty='⚡ '
 
 "plug 管理器配置
 call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'yianwillis/vimcdoc'
 Plug 'scrooloose/nerdcommenter'
