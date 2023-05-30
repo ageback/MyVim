@@ -7,7 +7,6 @@ nnoremap <silent> ]B :blast<CR>
 "轻松展开当前文件所在的目录
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
-colorscheme desert
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 set ambiwidth=double
 set nocompatible
@@ -83,4 +82,4 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-
+colorscheme desert
